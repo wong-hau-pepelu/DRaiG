@@ -1,0 +1,4 @@
+# draig depends only on pandas + numpy. everything else it uses
+# (argparse, shlex, sys, pathlib) ships with the python standard library.
+pandas>=2.0
+numpy>=1.24
