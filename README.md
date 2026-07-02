@@ -1,7 +1,7 @@
 # DRaiG
 
 DRaiG is a tiny, slightly boring, but genuinely helpful NetFlow investigator that I built for the kind of threat hunting where you already have a suspicious IP and now you need to figure out what it has actually been doing all day. You point it at one NetFlow CSV, type a target IP at the `flow>` prompt, and it hands you a full behavioral workup on that host, or, if you would rather trust nothing, the exact rows sitting behind any finding so you can check the tool's homework insetad of taking its word for it. Nothing about the target is baked into the script, so you can keep interrogating the same capture over and over without paying to re-read the file every single time.
-<!--  -->
+
 The whole point is that a capture has a story buried in it, and most of that story lives in the shape of the traffic rather than in any one row. A box that quietly pushes far more data out than it takes back in, while a crowd of little connections keep dialing into it, is usually not some polite client checking its email; more often it is a server handing payloads and tasking down to a pool of victims. DRaiG exists to surface that shape fast so you can spend your actual brain on the intersting part.
 
 ## What it does when you give it an IP
@@ -102,5 +102,3 @@ pip install pandas numpy
 ```
 
 Thats the whole thing. If it saves you ten minutes of squinting at a spreadsheet, it has done its job.
-
-
